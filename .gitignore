@@ -1,0 +1,7 @@
+
+# Credentials contains API key for OpenWeatherMap.org
+/credentials.py
+
+/venv/
+/__pycache__/
+/.DS_Store

@@ -1,0 +1,3 @@
+
+PADDING = ' ' * 2 
+HIGH_WIND_SPEEDS = 15

@@ -1,3 +1,2 @@
-
-PADDING = ' ' * 2 
+PADDING = ' ' * 2
 HIGH_WIND_SPEEDS = 15

@@ -86,11 +86,11 @@ def format_weather():
 	name, condition_id, condition, temperature, feels_like, wind_speed = parse_json()	
 	ascii_art, color = select_ascii(condition_id, wind_speed)
 	time = datetime.today().strftime("%I:%M %p") 
-	temperature, feels_like = f'{round(temperature)}°F', f'{round(feels_like)}°F'
+	temperature, feels_like, wind_speed = f'{round(temperature)}°F', f'{round(feels_like)}°F', f'{round(wind_speed)} mph'
 
 	weather_text = [
 		'{:<13} feels like {}'.format(temperature, feels_like),
-		'{:<13} wind speed {} mph'.format(condition, wind_speed),
+		'{:<13} wind {}'.format(condition, wind_speed),
 		'{:<13} thanks to OpenWeatherMap.org'.format(time)
 	]
 	
